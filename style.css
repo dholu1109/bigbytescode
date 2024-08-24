@@ -1,0 +1,82 @@
+@font-face {
+    font-family: gilroy;
+    src: url(Gilroy-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.nav .ot{
+    display: flex;
+    gap: 50px;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+    white-space: nowrap;
+}
+
+h1 #vio{
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: gilroy;
+    }
+    
+    html body{
+        background-color: black;
+        color: white;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+
+    .nav .ot{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 250px;
+        top: 25px;
+    }
+
+    h1{
+        position: absolute;
+        top: 42%;
+        left: 39%;
+        font-size: 40px;
+        white-space: nowrap;
+    }
+}
+
